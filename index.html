@@ -16,12 +16,27 @@
 
     <title>Richard Family Fund</title>
     <style>
-      .hero-unit{
+
+      .stripe  {
+        display:block;
+        padding: 80px;
+      }
+
+      .stripe.header {
         background-image:url('img/martin-richard-background.jpg');
         background-repeat:no-repeat;
        
         background-position:left; 
       }
+
+      .stripe.donate {
+        background-color:#eeeeee;
+      }
+
+      .stripe.faq {
+        background-color:#cecece;
+      }
+
       .clearfix:after {
         content: ".";
         display: block;
@@ -46,7 +61,7 @@
   </head>
 
   <body>
-    <div class="hero-unit">
+    <div class="stripe header">
         <div style="margin-left:435px">
           <h1>The Richard Family Fund</h1>
           <p>8-year-old Martin Richard was killed at the Boston Marathon bombing. His family members are in critical condition. Their community is rallying around them. Give now to show your support.</p>
@@ -74,11 +89,10 @@
       </div>
     </div>-->
 
-    <div class="container">
+    <div class="stripe donate">
       <div class="row">
         <div class="span12">
           <a name="donate"></a>
-          <div class="well clearfix">
             <div id="martin" class="pull-left" style="width:48%">
                 <h2>Martin's Story</h2>
                 <p class="lead">
@@ -111,19 +125,11 @@
           </div>
         </div>
          
-        </div>
-      </div>
-    </div>
-    
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <hr>
-        </div>
+
       </div>
     </div>
 
-    <div class="container">
+    <div class="stripe faq">
       <div class="row">
         
         <div class="span12">
@@ -143,6 +149,14 @@
             - 
           </p>
 
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <hr>
         </div>
       </div>
     </div>
