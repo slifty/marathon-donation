@@ -22,6 +22,26 @@
        
         background-position:left; 
       }
+      .clearfix:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+       
+      .clearfix {
+        display: inline-block;
+      }
+       
+      html[xmlns] .clearfix {
+        display: block;
+      }
+       
+      * html .clearfix {
+        height: 1%;
+      }
     </style>
   </head>
 
@@ -31,7 +51,7 @@
           <h1>The Richard Family Fund</h1>
           <p>8-year-old Martin Richard was killed at the Boston Marathon bombing. His family members are in critical condition. Their community is rallying around them. Give now to show your support.</p>
           <p>
-            <a class="btn btn-info btn-large">
+            <a class="btn btn-info btn-large" href="#donate">
               Support Peace. Donate now.  
             </a>
           </p>
@@ -56,8 +76,26 @@
 
     <div class="container">
       <div class="row">
-        <div class="span6">
-          <div class="well">
+        <div class="span12">
+          <a name="donate"></a>
+          <div class="well clearfix">
+            <div id="martin" class="pull-left" style="width:48%">
+                <h2>Martin's Story</h2>
+                <p class="lead">
+                  When bombs exploded at the Boston Marathon on April 15th, 2013, the Richard family was standing close to one of the blasts. Eight-year-old Martin lost his life. His mother and sister are among the injured. 
+                </p>
+                <p class="lead">
+                At this time of tragedy, their neighbors and the community of Dorchester have started a campaign to support the Richard family’s recovery. (Who are we?)
+              </p>
+              <p class="lead">
+                You can help.
+                </p>
+                <span class='st_facebook_vcount' displayText='Facebook'></span>
+                <span class='st_twitter_vcount' displayText='Tweet'></span>
+                <span class='st_googleplus_vcount' displayText='Google +'></span>
+                <span class='st_email_vcount' displayText='Email'></span>
+            </div>
+            <div style="width:48%" class="pull-right">
             <h2>Donate to help the Richard Family</h2>
             <!-- Wepay  -->
             <p>
@@ -66,29 +104,17 @@
 
             
             </p>
+            
             <p style="margin-top:105px ">
               <a class="wepay-widget-button wepay-green" id="wepay_widget_anchor_516daedc87da4" href="https://www.wepay.com/donations/1445889503">View Progress</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 1445889503,widget_type: "donation_campaign_progress",anchor_id: "wepay_widget_anchor_516daedc87da4",widget_options: {no_dialog: "true",total_collected: "true",button_text: "View Progress"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
             </p>
           </div>
         </div>
-        <div class="span6">
-          <div class="well">
-          <h2>Martin's Story</h2>
-          <p class="lead">
-            When bombs exploded at the Boston Marathon on April 15th, 2013, the Richard family was standing close to one of the blasts. Eight-year-old Martin lost his life. His mother and sister are among the injured. 
-          </p>
-          <p class="lead">
-          At this time of tragedy, their neighbors and the community of Dorchester have started a campaign to support the Richard family’s recovery. (Who are we?)
-        </p>
-        <p class="lead">
-          You can help.
-          </p>
-          </p>
-          </div>
+         
         </div>
       </div>
     </div>
-
+    
     <div class="container">
       <div class="row">
         <div class="span12">
@@ -97,8 +123,6 @@
       </div>
     </div>
 
-    <!-- Google Form -->
-    <a name="guestbook"></a>
     <div class="container">
       <div class="row">
         
@@ -131,5 +155,8 @@
         </div>
       </div>
     </div>  
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-b5a0270-b66-c633-f2bf-dbe29a54a6d4", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
   </body>
 </html>
