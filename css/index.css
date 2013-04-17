@@ -13,6 +13,7 @@ CSS styles for page style tweaks, overriding bootstrap
 #progress-bar {
   margin-top: 130px;
   margin-bottom: 0px;
+  float: left;
 }
 
 #donate-container {
@@ -20,3 +21,71 @@ CSS styles for page style tweaks, overriding bootstrap
   height: 100px;
   width: 200px;
 }
+
+
+
+      .stripe  {
+        display:block;
+        padding: 80px;
+      }
+
+      .stripe.header {
+        background-image:url('../img/garden.png');
+        background-repeat:no-repeat;
+        background-position:left; 
+      }
+
+      .stripe.donate {
+        background-color:#eeeeee;
+      }
+
+      .stripe.faq {
+        background-color:rgba(89, 175, 255, 0.44);
+      }
+
+      .story {
+        background-color: #dedede;
+        background-color: rgba(222,222,222, 0.75);
+        padding: 25px;
+        border: 1px;
+        border-radius: 10px;
+        max-width: 950px;
+        width: 90%;
+        min-height: 220px;
+        margin: auto;
+      }
+
+      .martin {
+        border: 1px solid gray;
+        border-radius: 10px;
+        float: left;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+
+      .clearfix:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+       
+      .clearfix {
+        display: inline-block;
+      }
+       
+      html[xmlns] .clearfix {
+        display: block;
+      }
+       
+      * html .clearfix {
+        height: 1%;
+      }
+
+      @media only screen and (min-width: 800px) and (max-width: 1000px) {
+        .martin {
+          width: ;
+        }
+      }
