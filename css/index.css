@@ -10,10 +10,11 @@ CSS styles for page style tweaks, overriding bootstrap
   /*scoop*/
 }
 
-#progress-bar {
-  margin-top: 130px;
+#amount-raised {
+  margin-top: 10px;
   margin-bottom: 0px;
   float: left;
+  margin-left: 3px;
 }
 
 #donate-container {
@@ -40,7 +41,7 @@ CSS styles for page style tweaks, overriding bootstrap
       }
 
       .stripe.faq {
-        background-color:rgba(89, 175, 255, 0.44);
+        background-color:rgba(94, 146, 194, 0.38);
       }
 
       .story {
