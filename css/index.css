@@ -1,21 +1,37 @@
 /*
 CSS styles for page style tweaks, overriding bootstrap
 */
+body{
+  line-height: inherit;
+}
+.wepay-donations-progress-widget-wrapper>.label{
+  line-height: inherit;
+  display: block;
+  padding: 2px 4px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  color: #333;
+  text-shadow: none;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: transparent;
 
+}
+.wepay-donations-progress-widget-wrapper .wepay-donations-progress-widget {
+  /*top: 15px;
+  left: -32px;
+  position: relative;*/
+}
 .pull-right {
-  height: 335px;
+ /* height: 335px;*/
 }
 
 #family-donation {
   /*scoop*/
 }
 
-#amount-raised {
-  margin-top: 10px;
-  margin-bottom: 0px;
-  float: left;
-  margin-left: 3px;
-}
+
 
 #donate-container {
   float: left;
@@ -32,6 +48,7 @@ CSS styles for page style tweaks, overriding bootstrap
         background-image:url('../img/header_low.jpg');
         background-repeat:no-repeat;
         background-position:left; 
+        background-size: cover;
       }
 
 .stripe.donate {
