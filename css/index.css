@@ -23,30 +23,29 @@ CSS styles for page style tweaks, overriding bootstrap
   width: 200px;
 }
 
-
-
-      .stripe  {
-        display:block;
-        padding: 80px;
+.stripe  {
+  display:block;
+  padding: 80px;
       }
 
-      .stripe.header {
+.stripe.header {
         background-image:url('../img/header.jpg');
         background-repeat:no-repeat;
         background-position:left; 
       }
 
-      .stripe.donate {
+.stripe.donate {
         background-color:#eeeeee;
+        position: relative;
       }
 
-      .stripe.faq {
+.stripe.faq {
         background-color:rgba(94, 146, 194, 0.38);
       }
 
-      .story {
+.story {
         background-color: #dedede;
-        background-color: rgba(222,222,222, 0.75);
+        background-color: rgba(207, 216, 224, 0.94);
         padding: 25px;
         border: 1px;
         border-radius: 10px;
@@ -56,7 +55,25 @@ CSS styles for page style tweaks, overriding bootstrap
         margin: auto;
       }
 
-      .martin {
+.donate:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0; 
+  border: 25px solid;
+}
+ 
+.donate-bottom:after {
+  border-top-color: #eeeeee;
+  border-bottom-color: rgba(94, 146, 194, 0) ;
+  border-left-color: rgba(94, 146, 194, 0);
+  border-right-color: rgba(94, 146, 194, 0);
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;   
+}
+ 
+.martin {
         border: 1px solid gray;
         border-radius: 10px;
         float: left;
@@ -64,7 +81,7 @@ CSS styles for page style tweaks, overriding bootstrap
         margin-top: 15px;
       }
 
-      .clearfix:after {
+.clearfix:after {
         content: ".";
         display: block;
         clear: both;
@@ -73,20 +90,39 @@ CSS styles for page style tweaks, overriding bootstrap
         height: 0;
       }
        
-      .clearfix {
+.clearfix {
         display: inline-block;
       }
        
-      html[xmlns] .clearfix {
+html[xmlns] .clearfix {
         display: block;
       }
        
-      * html .clearfix {
+* html .clearfix {
         height: 1%;
       }
 
-      @media only screen and (min-width: 800px) and (max-width: 1000px) {
+/* Responsive settings */
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
         .martin {
           width: ;
         }
+        .stripe  {
+        padding: 50px;
+      }
+      }
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+        .stripe  {
+        padding: 30px;
+      }
+
+@media only screen and (max-width: 499px) {
+        body {
+          padding-right: 0px !important;
+          padding-left: 0px !important;
+        }
+        .stripe  {
+        padding: 10px;
       }
