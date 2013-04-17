@@ -18,13 +18,16 @@
     <title>Richard Family Fund</title>
     <style>
 
+
+
       .stripe  {
         display:block;
         padding: 80px;
       }
 
       .stripe.header {
-        background-image:url('img/martin-richard-background.jpg');
+        background-image:url('img/garden.png');
+        /* background-image:url('img/martin-richard-background.jpg'); */
         background-repeat:no-repeat;
        
         background-position:left; 
@@ -35,7 +38,27 @@
       }
 
       .stripe.faq {
-        background-color:#cecece;
+        background-color:rgba(89, 175, 255, 0.44);
+      }
+
+      .story {
+        background-color: #dedede;
+        background-color: rgba(222,222,222, 0.75);
+        padding: 25px;
+        border: 1px;
+        border-radius: 10px;
+        max-width: 950px;
+        width: 90%;
+        min-height: 220px;
+        margin: auto;
+      }
+
+      .martin {
+        border: 1px solid gray;
+        border-radius: 10px;
+        float: left;
+        margin-right: 20px;
+        margin-top: 15px;
       }
 
       .clearfix:after {
@@ -58,20 +81,31 @@
       * html .clearfix {
         height: 1%;
       }
+
+      @media only screen and (min-width: 800px) and (max-width: 1000px) {
+        .martin {
+          width: ;
+        }
+      }
+
     </style>
   </head>
 
   <body>
     <div class="stripe header">
-        <div style="margin-left:435px">
+            <div class="row">
+        <div class="story">
+          <img class="martin" src="img/martin.png" width="200px">
+
           <h1>The Richard Family Fund</h1>
-          <p>8-year-old Martin Richard was killed at the Boston Marathon bombing. His family members are in critical condition. Their community is rallying around them. Give now to show your support.</p>
+          <p class="lead">8-year-old Martin Richard was killed at the Boston Marathon bombing. His family members are in critical condition. Their community is rallying around them. Give now to show your support.</p>
           <p>
             <a class="btn btn-info btn-large" href="#donate">
               Donate now
             </a>
           </p>
         </div>
+      </div>
     </div>
     <!--<div class="jumbotron masthead">
       <div class="container">
