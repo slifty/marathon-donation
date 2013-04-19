@@ -4,7 +4,11 @@ CSS styles for page style tweaks, overriding bootstrap
 body{
   line-height: inherit;
 }
+<<<<<<< HEAD
 .wepay-donations-progress-widget-wrapper>.label{
+=======
+.wepay-donations-progress-widget-wrapper .label{
+>>>>>>> Updates responsive CSS, updates copy, adds Woopra
   line-height: inherit;
   display: block;
   padding: 2px 4px;
@@ -46,9 +50,15 @@ body{
 
 .stripe.header {
         background-image:url('../img/header_low.jpg');
+<<<<<<< HEAD
         background-repeat:no-repeat;
         background-position:left; 
         background-size: cover;
+=======
+        /* background-repeat:no-repeat;
+        background-position:left; 
+        background-size: cover; */
+>>>>>>> Updates responsive CSS, updates copy, adds Woopra
       }
 
 .stripe.donate {
@@ -71,6 +81,23 @@ body{
         min-height: 220px;
         margin: auto;
       }
+
+.story-text {
+      float: left;
+      width: 55%;
+      }
+
+.family-photo img {
+  width: 400px;
+  margin-right:30px; 
+  margin-top: 30px;
+  border:1px #ccc solid; 
+  padding:5px; border-radius:4px;
+}
+
+.family-photo {
+  float: right;
+}
 
 .donate:after {
   content: '';
@@ -98,6 +125,28 @@ body{
         margin-top: 15px;
       }
 
+.martin img {
+  width: 200px;
+}
+
+.share-buttons {
+  margin-top: 45px;
+  text-align:center
+}
+
+.donations-container {
+  width: 55%;
+}
+
+.make-donation {
+
+    float:left;
+}
+
+        .mobile-only {
+          display: none;
+        } 
+
 .clearfix:after {
         content: ".";
         display: block;
@@ -119,27 +168,163 @@ html[xmlns] .clearfix {
         height: 1%;
       }
 
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
 /* Responsive settings */
 
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
-        .martin {
-          width: ;
+@media (min-width: 801px) and (max-width: 1080px) {
+          body {
+          padding-right: 0px !important;
+          padding-left: 0px !important;
         }
-        .stripe  {
-        padding: 50px;
-      }
+        .stripe  {  
+        padding: 70px;
       }
 
-@media only screen and (min-width: 500px) and (max-width: 799px) {
-        .stripe  {
+      .family-photo img {
+      display: none;
+      }
+      .donations-container {
+      width: 100%;
+      }
+      .story-text {
+        float: none;
+        width: 100%;
+      }
+
+      } 
+
+@media (min-width: 500px) and (max-width: 800px) {
+
+          body {
+          padding-right: 0px !important;
+          padding-left: 0px !important;
+        }
+
+        .stripe {
+        display: block;
         padding: 30px;
+        }
+
+        .martin {
+          float: none;
+        }
+
+        .mobile-only {
+          display: block;
+        } 
+
+        .story-text {
+        float: none;
+        width: 100%;
       }
 
-@media only screen and (max-width: 499px) {
+      .family-photo {
+      float: none;
+      width: 100%;
+        }
+
+      .make-donation {
+      float:none;
+      }
+
+      .share-buttons {
+      margin-top:0;
+      text-align:center;
+    }
+
+      .martin img  {
+      width: 100%;
+      }
+      .family-photo img {
+      display: none;
+      }
+
+}
+
+
+    
+
+@media (max-width: 499px) {
         body {
           padding-right: 0px !important;
           padding-left: 0px !important;
         }
-        .stripe  {
-        padding: 10px;
+
+        .lead {
+        margin-bottom: 20px;
+        font-size: 3em;
+        font-weight: 200;
+        line-height: 40px;
+        }
+
+        .stripe {
+        display: block;
+        padding: 30px;
+        }
+
+        .martin {
+          float: none;
+        }
+
+        .mobile-only {
+          display: block;
+        } 
+
+        .story-text {
+        float: none;
+        width: 100%;
       }
+
+      .family-photo {
+      float: none;
+      width: 100%;
+        }
+
+      .make-donation {
+      float:none;
+      }
+
+      .share-buttons {
+      margin-top:0;
+      text-align:center;
+    }
+
+      img .martin {
+      width: 100%;
+}
+
+      }
+
+@media aspect-ratio {
+
+      h2 {
+        font-size: 3.5em !important;
+      }
+
+        .lead {
+        margin-bottom: 20px;
+        font-weight: 200;
+        line-height: auto;
+        font-size: 3em;
+        }
+    }
+
+@media aspect-ratio {
+
+      h2 {
+        font-size: 3.5em !important;
+      }
+
+        .lead {
+        margin-bottom: 20px;
+        font-weight: 200;
+        line-height: auto;
+        font-size: 3em;
+        }
+}
